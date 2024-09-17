@@ -1,0 +1,297 @@
+Froala -> code editor -> free
+ultra edit -> paid software 
+VScode -> to write a program code editor is needed -> imagine they're like a notebook to write a code -> freely available by Microsoft 
+.html files 
+Website frontend consists of three parts/components 1-HTML(provides structure/layout)    2-CSS(provide style)  3-JS(provide logic- it defines functionality)
+--------------LEVEL 1---------------------------
+----------BASIC INFO------
+HTML stands for Hyper Text Markup Language
+HTML is the code that is used to structure a webpage and its content 
+The components used to design the structure of websites are called HTML tags
+install extension -> live server by Ritwick Dey
+FIRST HTML FILE index.html (It is the default name for a website's homepage-> server render in browser it detect it by index name) -> programmer's technique (treating it as home page)
+.htm to make file (not updated)
+! (Emmet Abbreviated is a toolkit. it come by default in vs code -> it gives you many helpful tools)-> this code is called boiler plate code (nor learn neither see)
+Hello World is a by default statement that you write while coding as a learner of new programming language
+Live server is an extension that helps you to avoid save and refresh or open  again and again
+HTML TAGS------------------------
+A container for some content or other HTML tags
+example: opening                        closing tag
+          [<p> (this is a paragraph)->content </p>]-> element
+tag + content is called element
+HTML provide functionalities of completing these tags itself 
+ANALYZING BASIC HTML PAGE---------------------
+<!DOCTYPE html>    tells browser you are using HTML5   -> browser take your html code and convert it to webpage/website
+<html>             this element tells this is a root(big/initial) of an html document(webpage is itself element)
+<head>            container for metadata(information about information) -> tell things for webpage we don't want to display. things that should only be known to our code 
+viewport tells that website should be responsive (on phone , ipad ,laptop) when we change aspect ratio (size of a webpage
+information that is important but shouldn't be displayed on webpage
+</head>
+<title> </title> is itself tag in which we write title
+<body>            contains all data rendered by the browser. body tag tells things that actually display on our page 
+</body>
+</html>
+not optimum if you miss anything. The benefit of HTML is that you can know about tag by just looking at it. You can also visit mdn reference to know more about these tags.
+--------------QUICK POINTS---------------------------
+1-Html tag is parent of head and body tag
+2-Most of the html elements have opening and  closing tags with content in between
+3-Some tags have no content in between eg) <br> used for next line
+4-We can use inspect element/view page source to edit html 
+shortcut of viewing page source is Ctrl + U
+we can edit html from inspect in browser and make changes on browser these changes won't be made on code. The snapshot and practical of this has been added in the picture
+----------COMMENTS IN HTML----------------
+This is part of code that shouldn't be parsed(mean our browser don't render it). it is not included in code or browser and for developers and only us
+short cut is ctrl+/
+<!-- This is an HTML Comment -->
+-------------------
+HTML isn't a case sensitive language like other languages.
+<html>  = <HTML>
+<p>   =  <P>
+<head>  = <HEAD>
+<body> = <BODY>
+------------------------    LEVEL-2   ----------------------------
+----------HTML Attributes-------------
+means property associated with tag 
+Attributes are used to add more information to the tag 
+<html lang='en'> -> language attribute is associated with root html tag 
+--------HEADING TAG------------
+used to display headings in HTML
+always use headings to show importance and not for font size. it may effect SEO ranking if used for font size
+h1        most important
+h2
+h3
+h4
+h5
+h6        least important
+------------PARAGRAPH TAG--------------
+used to add paragraph in html
+<p> This is a sample paragraph </p>
+to remove horizontal scroll and split same line into multiple lines to increase readability
+select -> setting -> command palette ->view: toggle word wrap
+shortcut is Alt + Z 
+------------ANCHOR TAG----------
+used to add links to your page 
+href is an attribute and link is a value
+<a href="https://google.com/"> Google </a>   Absolute link -> link of other website
+ <a href="index.html">Go to Level-1</a>      Relative link -> link of our own page
+----------IMAGE TAG-----------
+used to add images to your page
+<img src="/image.png" alt="Random Image">
+src attribute tells  the relative or absolute url of an image
+dimensions of image disturbs when you try to set height and width at the same time. It is advisable in best cases to set one thing at a times
+ -> copy img address and paste here . when server is disturbed and image is not load. user must know what was in this img or they don't miss out what's important
+  ------BR TAG---------
+used to add element in next line (line breaks) to your page
+br tag is an empty tag means that no additional attributes and content can be added to it
+<br>
+---------BOLD,ITALIC AND UNDERLINE TAGS-------------
+these tags are used to do formatting in your page
+used to highlight text in your page 
+<b> Bold </b>
+<i> Italic </i>
+<u> Underline </u>
+------------BIG AND SMALL TAGS-------------
+used to display big and small text on your page
+  <big>Big</big>
+  <small>Small</small>
+---------HR TAG-------------
+used to display a horizontal ruler , used to separate content
+<hr>
+---------SUBSCRIPT AND SUPERSCRIPT TAG------------
+ <sub>subscript</sub>  
+ H <sub>2</sub> O
+ <sup>superscript</sup> 
+A <sup>n</sup> + B 
+--------PRE TAG----------
+used to display text as it is (without ignoring spaces and next line)
+<pre> This
+is a sample
+text.
+</pre>
+------------------------    LEVEL-3   ----------------------------
+--------------PAGE LAYOUT TECHNIQUES----------
+using semantic tags for layout 
+semantic tags are those tags from whose name we can understand what's inside these tags.eg- header, footer
+benefit -> readable, structured code and improved SEO , good user experience
+non-semantic tags are those from which we can't understand what's inside these tags eg- div,span
+using the right tags for right things/work
+<header>
+<main>
+<footer>
+-----------INSIDE MAIN TAG-------
+Section tag-------- used for a section on your page 
+<section>
+Article tag-------- used for an article on your page
+<article>
+Aside tag---------- used for content aside main content(ads) -> SEO won't detect it as main content 
+<aside>
+---------REVISITING ANCHOR TAG---------
+FOR NEW TAB-------- opens google in a new tab and that tab is intact
+ <a href="https://www.google.com/" target="_main">Google</a>  
+FOR CLICKABLE PICTURE-------  now on clicking picture new tab'll be opened
+ <a href="https://www.google.com/"><img src="link" alt="">Google</a> 
+---------REVISITING IMAGE TAG------------
+<img src="link" height="50px">    to set height
+<img src="link" width=50px>       to set width
+widths and heights will be maintained autically as per aspect ratio
+--------DIV TAG----------------
+Div is a container used for other HTML elements
+it hasn't its own work and contain other elements that is why it is called as non-semantic tag.
+By default the height of div is set as zero when it has no element
+Div is a block Element (takes full width of screen)
+For the arrangement of multiple elements div can be used.
+LIST OF DIV/BLOCK TAGS------------
+<address>  <article>  <aside>  <blockquote>  <canvas> <dd> <div> <dl> <dt>  <fieldset> <figcaption> <figure> <footer>
+<form> <h1>-<h6> <header> <hr> <li> <main> <nav> <noscript> <ol> <p> <pre> <section> <table> <tfoot> <ul> <video>
+-------------SPAN TAG---------------
+Span is also a container used for other HTML elements
+Inline Element (takes width as per size)
+Inline elements are those that take width as per size
+LIST OF SPAN/INLINE TAGS------------
+<a> <abbr> <acronym> <b> <bdo> <big> <br> <button> <cite> <code> <dfn> <em> <i> <img> <input> <kbd> <label> <map> <object> <tt> <var> <output> <q> <samp> <script> <select> <small> <span> <strong> <sub> <sup> <textarea> <time>
+------------------------    LEVEL-4 / LEVEL-PRO   ----------------------------
+-----------LIST IN HTML-----------
+Lists are used to represent real life list data.
+There are two types of list
+1-unordered -> display data in bullets
+<ul>
+<li> Apple  </li>
+<li> Mango </li>
+</ul>
+making sublist is also possible.
+2-ordered -> display data in sequence
+<ol>
+<li> Apple  </li>
+<li> Mango </li>
+</ol>
+li stands for list item
+to change list type you can visit MDN reference to know more about it
+-------------TABLES IN HTML------
+Tables are used to represent real life table data.
+Table is a semantic tag because from its name we can know that we are going to make a table
+<tr> used to display table row 
+<td> used to display table data 
+<th> used to display table header 
+ <!-- -------------CAPTION IN TABLES----------- -->
+caption tell what is in the table eg) blood groups
+   <table>
+            <tr>
+                <th>Name</th>
+                <th>Roll No</th>
+            </tr>
+            <tr>
+                <th>Fateha</th>
+                <th>Ali</th>
+            </tr>
+         </table>
+--------- thead and tbody in tables----------
+They are used for layouts
+<thead>   used to wrap table head
+<tbody>   used to wrap table body
+----------COLSPAN----------
+used to span a column till other columns
+1- single header
+2- merge two or three cells 
+----------------------------FORM IN HTML-----------------------
+most important topic in HTML
+Forms are used to collect data from the user
+eg- sign up/login / help requests / contact me 
+<form> 
+form content 
+</form>
+------ACTION IN FORM------
+Action attribute is used to define what action needs to be performed when a form is submitted
+<form action="/action.php">
+-----FORM ELEMENT: INPUT-------
+<input type="text" placeholder="Type something here">
+type means what will be written in input (what type of input)
+text type would be displayed but password type won't be displayed
+placeholder means what'll be written before in input
+------------LABEL---------
+used to assign tag/name/label to input
+1-eyesight weak -> help for screen reader users audio tell here is input field 
+2-help for radio buttons 
+
+   <label for="id1">
+                <input type="radio" value="class X" name="class" id="id1">
+             </label>
+             <label for="id2">
+                <input type="radio" value="class X" name="class" id="id2">
+             </label>
+value and what we print should be in sync because user can't see value and backend developer can't see print value
+ <input type="radio" value="class X" name="class" id="id1"> class XI      is a wrong practice
+with the help of label now on clicking text and radio you would be able to check radio buttons, here functionality of label is helpful
+-----------CLASS AND ID----------------
+element has attribute class and id
+houses are like class/groups
+individual are like ids
+  <div id="id1" class="group1">
+          </div>
+          <div id="id2" class="group1">
+        </div>
+-----------CHECK BOX---------------
+It is used when we have to give options where multiple options can be selected
+<label for="Math">
+            <input type="checkbox" value="Math" name="subject" id="id1"> Math
+         </label>
+         <label for="Physics">
+            <input type="checkbox" value="Physics" name="subject" id="id2"> Physics
+         </label>
+         <label for="Bio">
+            <input type="checkbox" value="Bio" name="subject" id="id3"> Bio
+         </label>
+------------TEXT AREA------------
+used to give feedback or larger data
+rows are used to increase the area of text 
+ <textarea name="feedback" id="id4" placeholder=" please give your valuable feedack here" rows="5"></textarea>
+--------------SELECT-----------
+used to show dropdowns in form
+  <select name="city" id="city">
+            <option value="Karachi"> Karachi</option>
+            <option value="Lahore"> Lahore</option>
+            <option value="Islamabad"> Islamabad</option>
+        </select>
+ ----------- INPUT TYPE: SUBMIT--------------
+information can be add and submit through this button 
+   -----------  IFRAME TAG ---------------------- 
+to show website inside website 
+<iframe src="link">
+full video will be displayed on webpage that can be run -> whole youtuber play will come on our website
+whole functionalities will be displayed on your page( internally Wikipedia is working) . professional websites usually prevent this but Wikipedia is freely available so it allows these resources. data theft is no problem to them.
+---------VIDEO TAG-------------
+relative and absolute both url can be used
+  <video src="myvid.mp4">My Video</video>
+Attributes 
+-controls enable stop video, screen size, download , picture in picture , volume ,  play options
+-height     to set size 
+-width       to set size 
+-loop      play multiple times or in a loop 
+-autoplay can annoy user experience and may waste data in case of bad internet connection -> avoid to not create unpleasant situation. if autoplaying off sound -> good way of autoplay 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

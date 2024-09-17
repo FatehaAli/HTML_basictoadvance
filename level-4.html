@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level-4</title>
+</head>
+
+<body>
+    <!-- -----------LIST IN HTML-----------   -->
+    <!-- 1- UNORDERED LIST--- -->
+    <ul>
+        <li> Apple </li>
+        <ul>
+            <li>color:red</li>
+            <li>season:winter</li>
+        </ul>
+        <li> Mango </li>
+        <ul>
+            <li>color:yellow</li>
+            <li>season:summer</li>
+        </ul>
+    </ul>
+    <!-- 2- ORDERED LIST--- -->
+    <ol>
+        <li> Apple </li>
+        <ol>
+            <li>color:red</li>
+            <li>season:winter</li>
+        </ol>
+        <li> Mango </li>
+        <ol>
+            <li>color:yellow</li>
+            <li>season:summer</li>
+        </ol>
+        <hr>
+        <!-- -------------TABLES IN HTML------ -->
+        <!-- -------------CAPTION IN TABLES----------- -->
+        <caption> Student Data</caption>
+        <table>
+            <thead>
+                <tr>
+                    <!-- -------COLSPAN--------- -->
+                    <th colspan="2">Information</th>
+                    <!-- <th>Name</th>
+                <th>Roll No</th> -->
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fateha Ali</td>
+                    <td>1234</td>
+                </tr>
+
+                <tr>
+                    <td>Rauf Malik</td>
+                    <td>4567</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <!-- ---------FORM IN HTML------------- -->
+        <h2>REGISTRATION FORM</h2>
+        <form action="/action.php">
+            <input type="text" placeholder="username "> <br> <br>
+            <input type="password" placeholder="Type password here">
+            <br>
+            <!-- -------label------------>
+            <h4>Select your Class</h4>
+            <label for="id1">
+                <input type="radio" value="class XI" name="class" id="id1"> class XI
+            </label>
+            <label for="id2">
+                <input type="radio" value="class XII" name="class" id="id2"> class XII
+            </label>
+            <!-- -----------CLASS AND ID---------------- -->
+            <div id="id1" class="group1">
+            </div>
+            <div id="id2" class="group1">
+            </div>
+            <!-- -----------CHECK BOX---------------  -->
+            <h4>Select your subjects</h4>
+            <label for="Math">
+                <input type="checkbox" value="Math" name="subject" id="id1"> Math
+            </label>
+            <label for="Phy">
+                <input type="checkbox" value="Phy" name="subject" id="id2"> Phy
+            </label>
+            <label for="Bio">
+                <input type="checkbox" value="Bio" name="subject" id="id3"> Bio
+            </label>
+            <br>
+            <!-- --------------SELECT----------- -->
+            <h4>Select your city</h4>
+            <select name="city" id="city">
+                <option value="Karachi"> Karachi</option>
+                <option value="Lahore"> Lahore</option>
+                <option value="Islamabad"> Islamabad</option>
+            </select>
+            <!-- ------------TEXT AREA------------ -->
+            <br>
+            <br>
+            <textarea name="feedback" id="id4" placeholder=" please give your valuable feedack here"
+                rows="5"></textarea>
+            <br>
+            <!-- -----------SUBMIT-------------- -->
+            <input type="submit" value="submit">
+        </form>
+        <!-- -----------  IFRAME TAG ----------------------  -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=zFqtqLfHxM3BdQUg"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://google.com" frameborder="0"></iframe>
+        <!-- www.google.com refused to connect they protect them and refuse to show their website on your page. they will land on your website to stop these malicious things these steps can be taken -->
+        <!-- <iframe width="560" height="315" src="https://www.wikipedia.org/" frameborder="0"></iframe> -->
+        <hr>
+        <!-- ---------VIDEO TAG------------- -->
+         <video width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=zFqtqLfHxM3BdQUg">My Video</video>
+         <video width="560" height="315" src="myvideo.mp4" controls loop></video>
+         <video width="560" height="315" src="myvideo.mp4" controls autoplay></video>
+</body>
+
+</html>
